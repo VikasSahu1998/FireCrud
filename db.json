@@ -1,0 +1,54 @@
+{
+  "emplist": [
+    {
+      "name": "Vikas Sahu",
+      "email": "abc@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "emp1",
+      "email": "emp@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "emp2",
+      "email": "emp2@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "emp3",
+      "email": "emp3@gmail.coml",
+      "id": 6
+    },
+    {
+      "name": "vikas",
+      "email": "Fire@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "Suman Sahu",
+      "email": "eeee@gm.com",
+      "id": 8
+    },
+    {
+      "name": "Suman Sahu",
+      "email": "Fire@gmail.com",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

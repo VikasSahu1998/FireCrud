@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "emp-db-ae8f8": {
+      "hosting": {
+        "MAt-CRUD": [
+          "emp-db-ae8f8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "emp-db-ae8f8"
+  }
+}

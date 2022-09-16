@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>ADD DATA <mat-icon [mat-dialog-close]="true" style="margin-left: 6.5cm;">highlight_off</mat-icon>
+</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="addForm" novalidate class="d-flex-center">
+    <div class="example-container">
+      <div>
+        <mat-form-field class="full-width-field" appearance="outline">
+          <mat-label>Full Name</mat-label>
+          <input matInput placeholder="Full-Name" formControlName="name">
+          <mat-hint>Your Name</mat-hint>
+          <mat-error
+            *ngIf="addForm.get('name')?.invalid && (addForm.get('name')?.dirty || addForm.get('name')?.touched) && addForm.get('name')?.errors?.required">
+            name is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field class="full-width-field" appearance="outline">
+          <mat-label>E-Mail</mat-label>
+          <input matInput placeholder="Email" formControlName="email">
+          <mat-hint>Example@gmail.com</mat-hint>
+          <mat-error *ngIf="!addForm.get('email')?.errors?.required && (addForm.get('email')?.errors?.pattern)">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error
+            *ngIf="addForm.get('email')?.invalid && (addForm.get('email')?.dirty || addForm.get('email')?.touched) && addForm.get('email')?.errors?.required">
+            Email is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary" (click)="adddetail()" style="width:100%; margin-top: 1cm;" mat-button>{{button1}}</button>
+    </div>
+  </form>
+</div>
