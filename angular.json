@@ -103,8 +103,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "MAt-CRUD:build:production",
-            "firebaseProject": "emp-db-ae8f8",
-            "firebaseHostingSite": "emp-db-ae8f8"
+            "firebaseProject": "empdb-de6af",
+            "firebaseHostingSite": "empdb-de6af"
           }
         }
       }

@@ -6,6 +6,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -33,12 +34,11 @@ export class HomeComponent implements OnInit {
     })
   }
   getdetail() {
+    console.log();
     this.api.getEmp()
       .subscribe({
-        next: (res) => {
-          this.dataSource = new MatTableDataSource(res);
-          this.dataSource.paginator = this.paginator;
-          this.dataSource.sort = this.sort;
+        next: (data) => {
+          this.dataSource = new MatTableDataSource();
           this.getdetail();
         },
         error: (err) => {

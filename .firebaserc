@@ -6,9 +6,16 @@
           "emp-db-ae8f8"
         ]
       }
+    },
+    "empdb-de6af": {
+      "hosting": {
+        "MAt-CRUD": [
+          "empdb-de6af"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "emp-db-ae8f8"
+    "default": "empdb-de6af"
   }
 }
